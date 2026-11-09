@@ -1,0 +1,222 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    color: #2c3e50;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffcc00; /* Vibrant Yellow Accent */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo h1 {
+    color: #004080; /* Deep Royal Blue */
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #0056b3; /* Bright Blue */
+}
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+.btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s, transform 0.1s;
+}
+.order-btn {
+    background-color: #0056b3; /* Primary Blue Button */
+    color: white;
+}
+.order-btn:hover {
+    background-color: #004080;
+}
+.login-btn {
+    background-color: #ffcc00; /* Accent Yellow Button */
+    color: #2c3e50;
+}
+.login-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Hero Banner Section */
+.hero-section {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero-banner {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 32, 64, 0.4), rgba(0, 32, 64, 0.4)), #004080 center/cover no-repeat;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Yellow title for pop */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+.hero-cta {
+    background-color: #ffcc00;
+    color: #004080;
+    font-size: 16px;
+    padding: 10px 24px;
+}
+.hero-cta:hover {
+    background-color: #e6b800;
+}
+
+/* Menu Highlights / Grid Section */
+.menu-highlights {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.section-title {
+    color: #004080;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-left: 5px solid #ffcc00;
+    padding-left: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #d1d9e0;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,64,128,0.15);
+}
+.card-img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #e1e8ed; /* Placeholder background if src is empty */
+}
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    color: #004080;
+}
+.card-price {
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+.card-btn {
+    background-color: #ffcc00;
+    color: #004080;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background 0.2s;
+}
+.card-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Footer Section */
+footer {
+    background-color: #002244; /* Dark Navy Blue Footer */
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+    margin-top: 60px;
+    border-top: 4px solid #ffcc00;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-column h4 {
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+.footer-link {
+    color: #b0c4de;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+.footer-link:hover {
+    color: #fff;
+}
+.social-icons {
+    color: #b0c4de;
+    font-size: 14px;
+}
+.footer-bottom {
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    border-top: 1px solid #1a3a5c;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #8faadc;
+}
